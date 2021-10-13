@@ -21,20 +21,15 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-// @ts-ignore
-import Information from "@carbon/icons-vue/es/information/20";
-// @ts-ignore
-import Close from "@carbon/icons-vue/es/close/20";
-// @ts-ignore
-import WarningAlt from "@carbon/icons-vue/es/warning--alt/20";
-// @ts-ignore
-import Warning from "@carbon/icons-vue/es/warning/20";
-// @ts-ignore
-import CheckmarkOutline from "@carbon/icons-vue/es/checkmark--outline/20";
+import Info from './Icons/Info.vue'
+import Close from './Icons/Close.vue'
+import WarningAlt from './Icons/WarningAlt.vue'
+import Warning from './Icons/Warning.vue'
+import CheckmarkOutline from './Icons/CheckmarkOutline.vue'
 import {IToast, ToastType} from "@/types.ts";
 
 @Component({
-  components: { Information, Close, WarningAlt, Warning, CheckmarkOutline },
+  components: { Info, Close, WarningAlt, Warning, CheckmarkOutline },
 })
 export default class AkkToast extends Vue {
   @Prop({ type: Object, required: true })
@@ -58,7 +53,7 @@ export default class AkkToast extends Vue {
         return WarningAlt;
       case ToastType.INFO:
       default:
-        return Information;
+        return Info;
     }
   }
 }

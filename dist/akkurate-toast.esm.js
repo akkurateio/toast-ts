@@ -1,9 +1,4 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import Information from '@carbon/icons-vue/es/information/20';
-import Close from '@carbon/icons-vue/es/close/20';
-import WarningAlt from '@carbon/icons-vue/es/warning--alt/20';
-import Warning from '@carbon/icons-vue/es/warning/20';
-import CheckmarkOutline from '@carbon/icons-vue/es/checkmark--outline/20';
+import { Prop, Component, Vue } from 'vue-property-decorator';
 import { v4 } from 'uuid';
 
 function _initializerDefineProperty(target, property, descriptor, context) {
@@ -45,56 +40,19 @@ function _applyDecoratedDescriptor(target, property, decorators, descriptor, con
   return desc;
 }
 
-let ToastType;
-
-(function (ToastType) {
-  ToastType["INFO"] = "info";
-  ToastType["SUCCESS"] = "success";
-  ToastType["WARNING"] = "warning";
-  ToastType["DANGER"] = "danger";
-})(ToastType || (ToastType = {}));
-
-var _dec, _dec2, _class, _class2, _descriptor, _temp;
-let AkkToast = (_dec = Component({
-  components: {
-    Information,
-    Close,
-    WarningAlt,
-    Warning,
-    CheckmarkOutline
-  }
-}), _dec2 = Prop({
-  type: Object,
-  required: true
-}), _dec(_class = (_class2 = (_temp = class AkkToast extends Vue {
+var _dec, _class, _class2, _descriptor, _temp;
+let Info = (_dec = Prop({
+  type: Number,
+  default: 24,
+  required: false
+}), Component(_class = (_class2 = (_temp = class Info extends Vue {
   constructor(...args) {
     super(...args);
 
-    _initializerDefineProperty(this, "toast", _descriptor, this);
+    _initializerDefineProperty(this, "size", _descriptor, this);
   }
 
-  remove() {
-    this.$emit("delete", this.toast._id);
-  }
-
-  get icon() {
-    switch (this.toast.type) {
-      case ToastType.SUCCESS:
-        return CheckmarkOutline;
-
-      case ToastType.WARNING:
-        return Warning;
-
-      case ToastType.DANGER:
-        return WarningAlt;
-
-      case ToastType.INFO:
-      default:
-        return Information;
-    }
-  }
-
-}, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "toast", [_dec2], {
+}, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "size", [_dec], {
   configurable: true,
   enumerable: true,
   writable: true,
@@ -176,6 +134,435 @@ function normalizeComponent(template, style, script, scopeId, isFunctionalTempla
     return script;
 }
 
+/* script */
+const __vue_script__ = Info;
+/* template */
+
+var __vue_render__ = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('svg', {
+    attrs: {
+      "focusable": "false",
+      "preserveAspectRatio": "xMidYMid meet",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "fill": "currentColor",
+      "width": _vm.size,
+      "height": _vm.size,
+      "viewBox": "0 0 32 32",
+      "aria-hidden": "true"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M17 22L17 14 13 14 13 16 15 16 15 22 12 22 12 24 20 24 20 22 17 22zM16 8a1.5 1.5 0 101.5 1.5A1.5 1.5 0 0016 8z"
+    }
+  }), _vm._v(" "), _c('path', {
+    attrs: {
+      "d": "M16,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30ZM16,4A12,12,0,1,0,28,16,12,12,0,0,0,16,4Z"
+    }
+  })]);
+};
+
+var __vue_staticRenderFns__ = [];
+/* style */
+
+const __vue_inject_styles__ = undefined;
+/* scoped */
+
+const __vue_scope_id__ = undefined;
+/* module identifier */
+
+const __vue_module_identifier__ = undefined;
+/* functional template */
+
+const __vue_is_functional_template__ = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__ = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__,
+  staticRenderFns: __vue_staticRenderFns__
+}, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
+
+var _dec$1, _class$1, _class2$1, _descriptor$1, _temp$1;
+let Close = (_dec$1 = Prop({
+  type: Number,
+  default: 24,
+  required: false
+}), Component(_class$1 = (_class2$1 = (_temp$1 = class Close extends Vue {
+  constructor(...args) {
+    super(...args);
+
+    _initializerDefineProperty(this, "size", _descriptor$1, this);
+  }
+
+}, _temp$1), (_descriptor$1 = _applyDecoratedDescriptor(_class2$1.prototype, "size", [_dec$1], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+})), _class2$1)) || _class$1);
+
+/* script */
+const __vue_script__$1 = Close;
+/* template */
+
+var __vue_render__$1 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('svg', {
+    attrs: {
+      "focusable": "false",
+      "preserveAspectRatio": "xMidYMid meet",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "fill": "currentColor",
+      "width": _vm.size,
+      "height": _vm.size,
+      "viewBox": "0 0 32 32",
+      "aria-hidden": "true"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M24 9.4L22.6 8 16 14.6 9.4 8 8 9.4 14.6 16 8 22.6 9.4 24 16 17.4 22.6 24 24 22.6 17.4 16 24 9.4z"
+    }
+  })]);
+};
+
+var __vue_staticRenderFns__$1 = [];
+/* style */
+
+const __vue_inject_styles__$1 = undefined;
+/* scoped */
+
+const __vue_scope_id__$1 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$1 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$1 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$1 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$1,
+  staticRenderFns: __vue_staticRenderFns__$1
+}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, undefined, undefined, undefined);
+
+var _dec$2, _class$2, _class2$2, _descriptor$2, _temp$2;
+let WarningFilled = (_dec$2 = Prop({
+  type: Number,
+  default: 24,
+  required: false
+}), Component(_class$2 = (_class2$2 = (_temp$2 = class WarningFilled extends Vue {
+  constructor(...args) {
+    super(...args);
+
+    _initializerDefineProperty(this, "size", _descriptor$2, this);
+  }
+
+}, _temp$2), (_descriptor$2 = _applyDecoratedDescriptor(_class2$2.prototype, "size", [_dec$2], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+})), _class2$2)) || _class$2);
+
+/* script */
+const __vue_script__$2 = WarningFilled;
+/* template */
+
+var __vue_render__$2 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('svg', {
+    attrs: {
+      "focusable": "false",
+      "preserveAspectRatio": "xMidYMid meet",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "fill": "currentColor",
+      "width": _vm.size,
+      "height": _vm.size,
+      "viewBox": "0 0 32 32",
+      "aria-hidden": "true"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M16,23a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,23Z"
+    }
+  }), _vm._v(" "), _c('rect', {
+    attrs: {
+      "x": "15",
+      "y": "12",
+      "width": "2",
+      "height": "9"
+    }
+  }), _vm._v(" "), _c('path', {
+    attrs: {
+      "d": "M29,30H3a1,1,0,0,1-.8872-1.4614l13-25a1,1,0,0,1,1.7744,0l13,25A1,1,0,0,1,29,30ZM4.6507,28H27.3493l.002-.0033L16.002,6.1714h-.004L4.6487,27.9967Z"
+    }
+  })]);
+};
+
+var __vue_staticRenderFns__$2 = [];
+/* style */
+
+const __vue_inject_styles__$2 = undefined;
+/* scoped */
+
+const __vue_scope_id__$2 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$2 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$2 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$2 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$2,
+  staticRenderFns: __vue_staticRenderFns__$2
+}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, undefined, undefined, undefined);
+
+var _dec$3, _class$3, _class2$3, _descriptor$3, _temp$3;
+let Warning = (_dec$3 = Prop({
+  type: Number,
+  default: 24,
+  required: false
+}), Component(_class$3 = (_class2$3 = (_temp$3 = class Warning extends Vue {
+  constructor(...args) {
+    super(...args);
+
+    _initializerDefineProperty(this, "size", _descriptor$3, this);
+  }
+
+}, _temp$3), (_descriptor$3 = _applyDecoratedDescriptor(_class2$3.prototype, "size", [_dec$3], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+})), _class2$3)) || _class$3);
+
+/* script */
+const __vue_script__$3 = Warning;
+/* template */
+
+var __vue_render__$3 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('svg', {
+    attrs: {
+      "focusable": "false",
+      "preserveAspectRatio": "xMidYMid meet",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "fill": "currentColor",
+      "width": _vm.size,
+      "height": _vm.size,
+      "viewBox": "0 0 32 32",
+      "aria-hidden": "true"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M16 23a1.5 1.5 0 101.5 1.5A1.5 1.5 0 0016 23zM15 12H17V21H15z"
+    }
+  }), _vm._v(" "), _c('path', {
+    attrs: {
+      "d": "M29,30H3a1,1,0,0,1-.8872-1.4614l13-25a1,1,0,0,1,1.7744,0l13,25A1,1,0,0,1,29,30ZM4.6507,28H27.3493l.002-.0033L16.002,6.1714h-.004L4.6487,27.9967Z"
+    }
+  })]);
+};
+
+var __vue_staticRenderFns__$3 = [];
+/* style */
+
+const __vue_inject_styles__$3 = undefined;
+/* scoped */
+
+const __vue_scope_id__$3 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$3 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$3 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$3 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$3,
+  staticRenderFns: __vue_staticRenderFns__$3
+}, __vue_inject_styles__$3, __vue_script__$3, __vue_scope_id__$3, __vue_is_functional_template__$3, __vue_module_identifier__$3, false, undefined, undefined, undefined);
+
+var _dec$4, _class$4, _class2$4, _descriptor$4, _temp$4;
+let WarningFilled$1 = (_dec$4 = Prop({
+  type: Number,
+  default: 24,
+  required: false
+}), Component(_class$4 = (_class2$4 = (_temp$4 = class WarningFilled extends Vue {
+  constructor(...args) {
+    super(...args);
+
+    _initializerDefineProperty(this, "size", _descriptor$4, this);
+  }
+
+}, _temp$4), (_descriptor$4 = _applyDecoratedDescriptor(_class2$4.prototype, "size", [_dec$4], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+})), _class2$4)) || _class$4);
+
+/* script */
+const __vue_script__$4 = WarningFilled$1;
+/* template */
+
+var __vue_render__$4 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('svg', {
+    attrs: {
+      "focusable": "false",
+      "preserveAspectRatio": "xMidYMid meet",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "fill": "currentColor",
+      "width": _vm.size,
+      "height": _vm.size,
+      "viewBox": "0 0 32 32",
+      "aria-hidden": "true"
+    }
+  }, [_c('polygon', {
+    attrs: {
+      "points": "14 21.414 9 16.413 10.413 15 14 18.586 21.585 11 23 12.415 14 21.414"
+    }
+  }), _vm._v(" "), _c('path', {
+    attrs: {
+      "d": "M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"
+    }
+  })]);
+};
+
+var __vue_staticRenderFns__$4 = [];
+/* style */
+
+const __vue_inject_styles__$4 = undefined;
+/* scoped */
+
+const __vue_scope_id__$4 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$4 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$4 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$4 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$4,
+  staticRenderFns: __vue_staticRenderFns__$4
+}, __vue_inject_styles__$4, __vue_script__$4, __vue_scope_id__$4, __vue_is_functional_template__$4, __vue_module_identifier__$4, false, undefined, undefined, undefined);
+
+let ToastType;
+
+(function (ToastType) {
+  ToastType["INFO"] = "info";
+  ToastType["SUCCESS"] = "success";
+  ToastType["WARNING"] = "warning";
+  ToastType["DANGER"] = "danger";
+})(ToastType || (ToastType = {}));
+
+const defaultPosition = {
+  horizontal: "right",
+  vertical: "bottom"
+};
+
+var _dec$5, _dec2, _class$5, _class2$5, _descriptor$5, _temp$5;
+let AkkToast = (_dec$5 = Component({
+  components: {
+    Info: __vue_component__,
+    Close: __vue_component__$1,
+    WarningAlt: __vue_component__$2,
+    Warning: __vue_component__$3,
+    CheckmarkOutline: __vue_component__$4
+  }
+}), _dec2 = Prop({
+  type: Object,
+  required: true
+}), _dec$5(_class$5 = (_class2$5 = (_temp$5 = class AkkToast extends Vue {
+  constructor(...args) {
+    super(...args);
+
+    _initializerDefineProperty(this, "toast", _descriptor$5, this);
+  }
+
+  mounted() {
+    console.log('AkkToast.mounted', this.toast);
+  }
+
+  remove() {
+    this.$emit("delete", this.toast._id);
+  }
+
+  get icon() {
+    switch (this.toast.type) {
+      case ToastType.SUCCESS:
+        return __vue_component__$4;
+
+      case ToastType.WARNING:
+        return __vue_component__$3;
+
+      case ToastType.DANGER:
+        return __vue_component__$2;
+
+      case ToastType.INFO:
+      default:
+        return __vue_component__;
+    }
+  }
+
+}, _temp$5), (_descriptor$5 = _applyDecoratedDescriptor(_class2$5.prototype, "toast", [_dec2], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+})), _class2$5)) || _class$5);
+
 const isOldIE = typeof navigator !== 'undefined' &&
     /msie [6-9]\\b/.test(navigator.userAgent.toLowerCase());
 function createInjector(context) {
@@ -230,10 +617,10 @@ function addStyle(id, css) {
 }
 
 /* script */
-const __vue_script__ = AkkToast;
+const __vue_script__$5 = AkkToast;
 /* template */
 
-var __vue_render__ = function () {
+var __vue_render__$5 = function () {
   var _vm = this;
 
   var _h = _vm.$createElement;
@@ -272,13 +659,13 @@ var __vue_render__ = function () {
   }, [_c('Close')], 1)])]);
 };
 
-var __vue_staticRenderFns__ = [];
+var __vue_staticRenderFns__$5 = [];
 /* style */
 
-const __vue_inject_styles__ = function (inject) {
+const __vue_inject_styles__$5 = function (inject) {
   if (!inject) return;
-  inject("data-v-2bee98b3_0", {
-    source: ".akk-toast-item[data-v-2bee98b3]{font-family:sans-serif;display:flex;flex-direction:row;width:100%;font-size:.875rem;margin-top:.5rem;background-color:var(--white);background-clip:padding-box;border:1px solid rgba(0,0,0,.1);box-shadow:0 .25rem .75rem rgba(0,0,0,.1);border-radius:.25rem;border-left:3px solid var(--info,#17a2b8)}@media (min-width:576px){.akk-toast-item[data-v-2bee98b3]{width:420px}}.akk-toast-item.danger[data-v-2bee98b3]{border-left:none;background-color:var(--danger,#c00);color:var(--white,#fff)}.akk-toast-item.success[data-v-2bee98b3]{border-left:3px solid var(--success,#28a745)}.akk-toast-item.warning[data-v-2bee98b3]{border-left:3px solid var(--warning,#ffc107)}.akk-toast-item.danger .akk-toast-icon svg[data-v-2bee98b3]{fill:var(--white,#fff)}.akk-toast-item.danger .akk-toast-close svg[data-v-2bee98b3]{fill:var(--white,#fff);opacity:.5}.akk-toast-icon svg[data-v-2bee98b3]{fill:var(--info,#17a2b8)}.akk-toast-item.success .akk-toast-icon svg[data-v-2bee98b3]{fill:var(--success,#28a745)}.akk-toast-item.warning .akk-toast-icon svg[data-v-2bee98b3]{fill:var(--warning,#ffc107)}.akk-toast-action a[data-v-2bee98b3]{color:var(--info,#17a2b8);text-decoration:none}.akk-toast-item.success .akk-toast-action a[data-v-2bee98b3]{color:var(--success,#28a745)}.akk-toast-item.warning .akk-toast-action a[data-v-2bee98b3]{color:var(--warning,#ffc107)}.akk-toast-item.danger .akk-toast-action a[data-v-2bee98b3]{color:var(--white,#fff);text-decoration:underline}.akk-toast-header[data-v-2bee98b3]{font-size:1.25rem;font-weight:600;margin-bottom:.25rem}.akk-toast-body[data-v-2bee98b3]{flex:1;margin:1rem 0}.akk-toast-close[data-v-2bee98b3]{outline:2px solid transparent;outline-offset:-2px;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:transparent;border:none;cursor:pointer;margin-left:auto;padding:0;height:3rem;width:3rem;min-height:3rem;min-width:3rem}.akk-toast-icon[data-v-2bee98b3]{margin:1rem}.akk-toast-action[data-v-2bee98b3]{margin:.5rem 0 0 0}",
+  inject("data-v-64380114_0", {
+    source: ".akk-toast-item[data-v-64380114]{font-family:sans-serif;display:flex;flex-direction:row;width:100%;font-size:.875rem;margin-top:.5rem;background-color:var(--white,#fff);background-clip:padding-box;border:1px solid rgba(0,0,0,.1);box-shadow:0 .25rem .75rem rgba(0,0,0,.1);border-radius:.25rem;border-left:3px solid var(--info,#17a2b8)}@media (min-width:576px){.akk-toast-item[data-v-64380114]{width:420px}}.akk-toast-item.danger[data-v-64380114]{border-left:none;background-color:var(--danger,#c00);color:var(--white,#fff)}.akk-toast-item.success[data-v-64380114]{border-left:3px solid var(--success,#28a745)}.akk-toast-item.warning[data-v-64380114]{border-left:3px solid var(--warning,#ffc107)}.akk-toast-item.danger .akk-toast-icon svg[data-v-64380114]{fill:var(--white,#fff)}.akk-toast-item.danger .akk-toast-close svg[data-v-64380114]{fill:var(--white,#fff);opacity:.5}.akk-toast-icon svg[data-v-64380114]{fill:var(--info,#17a2b8)}.akk-toast-item.success .akk-toast-icon svg[data-v-64380114]{fill:var(--success,#28a745)}.akk-toast-item.warning .akk-toast-icon svg[data-v-64380114]{fill:var(--warning,#ffc107)}.akk-toast-action a[data-v-64380114]{color:var(--info,#17a2b8);text-decoration:none}.akk-toast-item.success .akk-toast-action a[data-v-64380114]{color:var(--success,#28a745)}.akk-toast-item.warning .akk-toast-action a[data-v-64380114]{color:var(--warning,#ffc107)}.akk-toast-item.danger .akk-toast-action a[data-v-64380114]{color:var(--white,#fff);text-decoration:underline}.akk-toast-header[data-v-64380114]{font-size:1.25rem;font-weight:600;margin-bottom:.25rem}.akk-toast-body[data-v-64380114]{flex:1;margin:1rem 0}.akk-toast-close[data-v-64380114]{outline:2px solid transparent;outline-offset:-2px;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:transparent;border:none;cursor:pointer;margin-left:auto;padding:0;height:3rem;width:3rem;min-height:3rem;min-width:3rem}.akk-toast-icon[data-v-64380114]{margin:1rem}.akk-toast-action[data-v-64380114]{margin:.5rem 0 0 0}",
     map: undefined,
     media: undefined
   });
@@ -286,34 +673,45 @@ const __vue_inject_styles__ = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__ = "data-v-2bee98b3";
+const __vue_scope_id__$5 = "data-v-64380114";
 /* module identifier */
 
-const __vue_module_identifier__ = undefined;
+const __vue_module_identifier__$5 = undefined;
 /* functional template */
 
-const __vue_is_functional_template__ = false;
+const __vue_is_functional_template__$5 = false;
 /* style inject SSR */
 
 /* style inject shadow dom */
 
-const __vue_component__ = /*#__PURE__*/normalizeComponent({
-  render: __vue_render__,
-  staticRenderFns: __vue_staticRenderFns__
-}, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, createInjector, undefined, undefined);
+const __vue_component__$5 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$5,
+  staticRenderFns: __vue_staticRenderFns__$5
+}, __vue_inject_styles__$5, __vue_script__$5, __vue_scope_id__$5, __vue_is_functional_template__$5, __vue_module_identifier__$5, false, createInjector, undefined, undefined);
 
-var _dec$1, _class$1, _temp$1;
-let AkkToastComponent = (_dec$1 = Component({
+var _dec$6, _dec2$1, _class$6, _class2$6, _descriptor$6, _temp$6;
+let AkkToastComponent = (_dec$6 = Component({
   components: {
-    AkkToast: __vue_component__
+    AkkToast: __vue_component__$5
   }
-}), _dec$1(_class$1 = (_temp$1 = class AkkToastComponent extends Vue {
+}), _dec2$1 = Prop({
+  type: Object,
+  default: () => {
+    return {
+      position: defaultPosition
+    };
+  }
+}), _dec$6(_class$6 = (_class2$6 = (_temp$6 = class AkkToastComponent extends Vue {
   constructor(...args) {
     super(...args);
+
+    _initializerDefineProperty(this, "setting", _descriptor$6, this);
+
     this.toasts = [];
   }
 
   mounted() {
+    console.log('AkkToastComponent.mounted', this.setting, this.positionAnimation);
     this.$emit("init", this);
   }
 
@@ -337,13 +735,30 @@ let AkkToastComponent = (_dec$1 = Component({
     this.toasts = this.toasts.filter(x => x._id !== id);
   }
 
-}, _temp$1)) || _class$1);
+  get position() {
+    var _this$setting, _this$setting$positio, _this$setting2, _this$setting2$positi;
+
+    return [`position-${(_this$setting = this.setting) === null || _this$setting === void 0 ? void 0 : (_this$setting$positio = _this$setting.position) === null || _this$setting$positio === void 0 ? void 0 : _this$setting$positio.horizontal}`, `position-${(_this$setting2 = this.setting) === null || _this$setting2 === void 0 ? void 0 : (_this$setting2$positi = _this$setting2.position) === null || _this$setting2$positi === void 0 ? void 0 : _this$setting2$positi.vertical}`];
+  }
+
+  get positionAnimation() {
+    var _this$setting3, _this$setting3$positi, _this$setting4, _this$setting4$positi, _this$setting5, _this$setting5$positi, _this$setting6, _this$setting6$positi;
+
+    return 'card' + ((_this$setting3 = this.setting) === null || _this$setting3 === void 0 ? void 0 : (_this$setting3$positi = _this$setting3.position) === null || _this$setting3$positi === void 0 ? void 0 : _this$setting3$positi.vertical.charAt(0).toUpperCase()) + ((_this$setting4 = this.setting) === null || _this$setting4 === void 0 ? void 0 : (_this$setting4$positi = _this$setting4.position) === null || _this$setting4$positi === void 0 ? void 0 : _this$setting4$positi.vertical.slice(1)) + ((_this$setting5 = this.setting) === null || _this$setting5 === void 0 ? void 0 : (_this$setting5$positi = _this$setting5.position) === null || _this$setting5$positi === void 0 ? void 0 : _this$setting5$positi.horizontal.charAt(0).toUpperCase()) + ((_this$setting6 = this.setting) === null || _this$setting6 === void 0 ? void 0 : (_this$setting6$positi = _this$setting6.position) === null || _this$setting6$positi === void 0 ? void 0 : _this$setting6$positi.horizontal.slice(1));
+  }
+
+}, _temp$6), (_descriptor$6 = _applyDecoratedDescriptor(_class2$6.prototype, "setting", [_dec2$1], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+})), _class2$6)) || _class$6);
 
 /* script */
-const __vue_script__$1 = AkkToastComponent;
+const __vue_script__$6 = AkkToastComponent;
 /* template */
 
-var __vue_render__$1 = function () {
+var __vue_render__$6 = function () {
   var _vm = this;
 
   var _h = _vm.$createElement;
@@ -352,8 +767,9 @@ var __vue_render__$1 = function () {
 
   return _c('transition-group', {
     staticClass: "akk-toast-container",
+    class: _vm.position,
     attrs: {
-      "name": "card",
+      "name": _vm.positionAnimation,
       "tag": "div"
     }
   }, _vm._l(_vm.toasts, function (toast) {
@@ -370,13 +786,13 @@ var __vue_render__$1 = function () {
   }), 1);
 };
 
-var __vue_staticRenderFns__$1 = [];
+var __vue_staticRenderFns__$6 = [];
 /* style */
 
-const __vue_inject_styles__$1 = function (inject) {
+const __vue_inject_styles__$6 = function (inject) {
   if (!inject) return;
-  inject("data-v-b9b3a61a_0", {
-    source: ".akk-toast-container[data-v-b9b3a61a]{z-index:9999;position:fixed;bottom:0;right:0;margin:1rem}.card[data-v-b9b3a61a]{transition:all .5s}.card-enter[data-v-b9b3a61a],.card-leave-to[data-v-b9b3a61a]{opacity:0;transform:translateX(150px)}.card-enter-to[data-v-b9b3a61a]{opacity:1;transform:translateX(0)}.card-move[data-v-b9b3a61a]{transition:all .5s}",
+  inject("data-v-d2c4ae62_0", {
+    source: ".akk-toast-container[data-v-d2c4ae62]{z-index:9999;position:fixed;margin:1rem}.akk-toast-container.position-top[data-v-d2c4ae62]{top:0}.akk-toast-container.position-bottom[data-v-d2c4ae62]{bottom:0}.akk-toast-container.position-left[data-v-d2c4ae62]{left:0}.akk-toast-container.position-right[data-v-d2c4ae62]{right:0}.cardBottomCenter[data-v-d2c4ae62],.cardBottomLeft[data-v-d2c4ae62],.cardBottomRight[data-v-d2c4ae62],.cardTopCenter[data-v-d2c4ae62],.cardTopLeft[data-v-d2c4ae62],.cardTopRight[data-v-d2c4ae62]{transition:all .5s}.cardBottomRight-leave-to[data-v-d2c4ae62],.cardBotttomRight-enter[data-v-d2c4ae62],.cardTopRight-enter[data-v-d2c4ae62],.cardTopRight-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateX(150px)}.cardBottomRight-enter-to[data-v-d2c4ae62],.cardTopRight-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateX(0)}.cardBottomLeft-leave-to[data-v-d2c4ae62],.cardBotttomLeft-enter[data-v-d2c4ae62],.cardTopLeft-enter[data-v-d2c4ae62],.cardTopLeft-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateX(-150px)}.cardBottomLeft-enter-to[data-v-d2c4ae62],.cardTopLeft-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateX(0)}.cardBottomCenter-enter[data-v-d2c4ae62],.cardBottomCenter-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateY(-150px)}.cardBottomCenter-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateY(0)}.cardTopCenter-enter[data-v-d2c4ae62],.cardTopCenter-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateY(150px)}.cardTopCenter-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateY(0)}.cardBottomCenter-move[data-v-d2c4ae62],.cardBottomLeft-move[data-v-d2c4ae62],.cardBottomRight-move[data-v-d2c4ae62],.cardTopCenter-move[data-v-d2c4ae62],.cardTopLeft-move[data-v-d2c4ae62],.cardTopRight-move[data-v-d2c4ae62]{transition:all .5s}",
     map: undefined,
     media: undefined
   });
@@ -384,21 +800,21 @@ const __vue_inject_styles__$1 = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__$1 = "data-v-b9b3a61a";
+const __vue_scope_id__$6 = "data-v-d2c4ae62";
 /* module identifier */
 
-const __vue_module_identifier__$1 = undefined;
+const __vue_module_identifier__$6 = undefined;
 /* functional template */
 
-const __vue_is_functional_template__$1 = false;
+const __vue_is_functional_template__$6 = false;
 /* style inject SSR */
 
 /* style inject shadow dom */
 
-const __vue_component__$1 = /*#__PURE__*/normalizeComponent({
-  render: __vue_render__$1,
-  staticRenderFns: __vue_staticRenderFns__$1
-}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, createInjector, undefined, undefined);
+const __vue_component__$6 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$6,
+  staticRenderFns: __vue_staticRenderFns__$6
+}, __vue_inject_styles__$6, __vue_script__$6, __vue_scope_id__$6, __vue_is_functional_template__$6, __vue_module_identifier__$6, false, createInjector, undefined, undefined);
 
 const defaultOptions = {
   timeout: 1500
@@ -411,7 +827,7 @@ const install = async function installAkkurateToast(Vue) {
   div.setAttribute("id", "toast");
   document.getElementsByTagName("body")[0].appendChild(div);
   const toast = await new Promise(resolve => new Vue({
-    render: h => h(__vue_component__$1, {
+    render: h => h(__vue_component__$6, {
       on: {
         init(e) {
           resolve(e);
@@ -420,7 +836,6 @@ const install = async function installAkkurateToast(Vue) {
       }
     })
   }).$mount("#toast"));
-  console.log("ok");
 
   Vue.prototype.$toast = function (title, message, opts = {}) {
     const options = { ...defaultOptions,
