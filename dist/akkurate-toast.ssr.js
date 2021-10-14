@@ -979,8 +979,8 @@ var __vue_staticRenderFns__$6 = [];
 
 var __vue_inject_styles__$6 = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-d2c4ae62_0", {
-    source: ".akk-toast-container[data-v-d2c4ae62]{z-index:9999;position:fixed;margin:1rem}.akk-toast-container.position-top[data-v-d2c4ae62]{top:0}.akk-toast-container.position-bottom[data-v-d2c4ae62]{bottom:0}.akk-toast-container.position-left[data-v-d2c4ae62]{left:0}.akk-toast-container.position-right[data-v-d2c4ae62]{right:0}.cardBottomCenter[data-v-d2c4ae62],.cardBottomLeft[data-v-d2c4ae62],.cardBottomRight[data-v-d2c4ae62],.cardTopCenter[data-v-d2c4ae62],.cardTopLeft[data-v-d2c4ae62],.cardTopRight[data-v-d2c4ae62]{transition:all .5s}.cardBottomRight-leave-to[data-v-d2c4ae62],.cardBotttomRight-enter[data-v-d2c4ae62],.cardTopRight-enter[data-v-d2c4ae62],.cardTopRight-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateX(150px)}.cardBottomRight-enter-to[data-v-d2c4ae62],.cardTopRight-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateX(0)}.cardBottomLeft-leave-to[data-v-d2c4ae62],.cardBotttomLeft-enter[data-v-d2c4ae62],.cardTopLeft-enter[data-v-d2c4ae62],.cardTopLeft-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateX(-150px)}.cardBottomLeft-enter-to[data-v-d2c4ae62],.cardTopLeft-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateX(0)}.cardBottomCenter-enter[data-v-d2c4ae62],.cardBottomCenter-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateY(-150px)}.cardBottomCenter-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateY(0)}.cardTopCenter-enter[data-v-d2c4ae62],.cardTopCenter-leave-to[data-v-d2c4ae62]{opacity:0;transform:translateY(150px)}.cardTopCenter-enter-to[data-v-d2c4ae62]{opacity:1;transform:translateY(0)}.cardBottomCenter-move[data-v-d2c4ae62],.cardBottomLeft-move[data-v-d2c4ae62],.cardBottomRight-move[data-v-d2c4ae62],.cardTopCenter-move[data-v-d2c4ae62],.cardTopLeft-move[data-v-d2c4ae62],.cardTopRight-move[data-v-d2c4ae62]{transition:all .5s}",
+  inject("data-v-79ede4c4_0", {
+    source: ".akk-toast-container[data-v-79ede4c4]{z-index:99999;position:fixed;margin:1rem}.akk-toast-container.position-top[data-v-79ede4c4]{top:0}.akk-toast-container.position-bottom[data-v-79ede4c4]{bottom:0}.akk-toast-container.position-left[data-v-79ede4c4]{left:0}.akk-toast-container.position-right[data-v-79ede4c4]{right:0}.cardBottomCenter[data-v-79ede4c4],.cardBottomLeft[data-v-79ede4c4],.cardBottomRight[data-v-79ede4c4],.cardTopCenter[data-v-79ede4c4],.cardTopLeft[data-v-79ede4c4],.cardTopRight[data-v-79ede4c4]{transition:all .5s}.cardBottomRight-leave-to[data-v-79ede4c4],.cardBotttomRight-enter[data-v-79ede4c4],.cardTopRight-enter[data-v-79ede4c4],.cardTopRight-leave-to[data-v-79ede4c4]{opacity:0;transform:translateX(150px)}.cardBottomRight-enter-to[data-v-79ede4c4],.cardTopRight-enter-to[data-v-79ede4c4]{opacity:1;transform:translateX(0)}.cardBottomLeft-leave-to[data-v-79ede4c4],.cardBotttomLeft-enter[data-v-79ede4c4],.cardTopLeft-enter[data-v-79ede4c4],.cardTopLeft-leave-to[data-v-79ede4c4]{opacity:0;transform:translateX(-150px)}.cardBottomLeft-enter-to[data-v-79ede4c4],.cardTopLeft-enter-to[data-v-79ede4c4]{opacity:1;transform:translateX(0)}.cardBottomCenter-enter[data-v-79ede4c4],.cardBottomCenter-leave-to[data-v-79ede4c4]{opacity:0;transform:translateY(-150px)}.cardBottomCenter-enter-to[data-v-79ede4c4]{opacity:1;transform:translateY(0)}.cardTopCenter-enter[data-v-79ede4c4],.cardTopCenter-leave-to[data-v-79ede4c4]{opacity:0;transform:translateY(150px)}.cardTopCenter-enter-to[data-v-79ede4c4]{opacity:1;transform:translateY(0)}.cardBottomCenter-move[data-v-79ede4c4],.cardBottomLeft-move[data-v-79ede4c4],.cardBottomRight-move[data-v-79ede4c4],.cardTopCenter-move[data-v-79ede4c4],.cardTopLeft-move[data-v-79ede4c4],.cardTopRight-move[data-v-79ede4c4]{transition:all .5s}",
     map: undefined,
     media: undefined
   });
@@ -988,10 +988,10 @@ var __vue_inject_styles__$6 = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__$6 = "data-v-d2c4ae62";
+var __vue_scope_id__$6 = "data-v-79ede4c4";
 /* module identifier */
 
-var __vue_module_identifier__$6 = "data-v-d2c4ae62";
+var __vue_module_identifier__$6 = "data-v-79ede4c4";
 /* functional template */
 
 var __vue_is_functional_template__$6 = false;

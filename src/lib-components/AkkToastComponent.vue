@@ -63,7 +63,7 @@ export default class AkkToastComponent extends Vue {
 </script>
 <style scoped>
 .akk-toast-container {
-  z-index: 9999;
+  z-index: 99999;
   position: fixed;
   margin: 1rem;
 }
